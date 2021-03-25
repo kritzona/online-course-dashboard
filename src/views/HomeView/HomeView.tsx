@@ -1,6 +1,5 @@
 import React from 'react'
 import HomeViewStyled from './HomeViewStyled'
-import Text from '../../components/atoms/Text/Text'
 import Button from '../../components/atoms/Button/Button'
 import ContentHeader from '../../components/molecules/ContentHeader/ContentHeader'
 import Wrapper from '../../components/atoms/Wrapper/Wrapper'

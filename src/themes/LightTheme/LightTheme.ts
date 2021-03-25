@@ -7,17 +7,17 @@ const LightTheme: DefaultTheme = {
 
     borderRadius: 5,
 
-    tlFontSize: 24,
-    tlLineHeight: 24,
+    tlFontSize: 30,
+    tlLineHeight: 30,
 
-    tmFontSize: 14,
-    tmLineHeight: 21,
+    tmFontSize: 28,
+    tmLineHeight: 24,
 
-    tnFontSize: 12,
-    tnLineHeight: 18,
+    tnFontSize: 14,
+    tnLineHeight: 14,
 
     tsFontSize: 12,
-    tsLineHeight: 18,
+    tsLineHeight: 12,
 
     letterSpacingInPercent: 1,
 
@@ -26,18 +26,29 @@ const LightTheme: DefaultTheme = {
     boldFontWeight: 700,
   },
   colors: {
-    primaryColor: '#2196F3',
-    hoverPrimaryColor: '#2196F3',
-    activePrimaryColor: '#2196F3',
+    primaryColor: '#713BDB',
+    hoverPrimaryColor: '#713BDB',
+    activePrimaryColor: '#713BDB',
 
-    errorColor: '#EB5757',
-    successColor: '#27AE60',
-    infoColor: '#2196F3',
+    accentColor: '#373B53',
+    hoverAccentColor: '#373B53',
+    activeAccentColor: '#373B53',
+
+    redColor: '#FF4C61',
+    greenColor: '#33D69F',
+    blueColor: '#4CB8FF',
+    orangeColor: '#FFB800',
+    aquaColor: '#21B8C7',
+
+    errorColor: '#FF4C61',
+    successColor: '#33D69F',
+    infoColor: '#4CB8FF',
 
     whiteColor: '#FFFFFF',
-    blackColor: '#4A4A4A',
-    greyColor: '#A0B0B9',
-    lightGreyColor: '#DFE5EC',
+    blackColor: '#000000',
+    greyColor: '#A6ACBE',
+    lightGreyColor: '#DADCE5',
+    shadowColor: '#EDEDF6',
 
     backgroundColor: '#F3F7FA',
   },

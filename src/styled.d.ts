@@ -5,6 +5,16 @@ interface IThemeColors {
   hoverPrimaryColor: string
   activePrimaryColor: string
 
+  accentColor: string
+  hoverAccentColor: string
+  activeAccentColor: string
+
+  redColor: string
+  greenColor: string
+  blueColor: string
+  orangeColor: string
+  aquaColor: string
+
   errorColor: string
   successColor: string
   infoColor: string
@@ -13,6 +23,7 @@ interface IThemeColors {
   blackColor: string
   greyColor: string
   lightGreyColor: string
+  shadowColor: string
 
   backgroundColor: string
 }

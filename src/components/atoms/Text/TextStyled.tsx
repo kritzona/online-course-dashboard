@@ -98,18 +98,21 @@ const generateFontStyle = (
 
 export const TextH1Styled = styled.h1<IProps>`
   ${({ theme, transform }) => css`
+    margin: 0;
     ${generateFontStyle(theme, 'large', 'semibold')}
     ${generateTextTransformStyle(transform)}
   `}
 `
 export const TextH2Styled = styled.h2<IProps>`
   ${({ theme, transform }) => css`
+    margin: 0;
     ${generateFontStyle(theme, 'normal', 'semibold')}
     ${generateTextTransformStyle(transform)}
   `}
 `
 export const TextPStyled = styled.p<IProps>`
   ${({ theme, size, weight, transform }) => css`
+    margin: 0;
     ${generateFontStyle(theme, size, weight)}
     ${generateTextTransformStyle(transform)}
   `}

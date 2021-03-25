@@ -14,7 +14,6 @@ const WrapperStyled = styled.div<IProps>`
       ${paddingX === undefined || paddingX
         ? `${theme.sizes.stepSize * 6}px`
         : '0'};
-    box-sizing: border-box;
     position: relative;
 
     @media ${theme.mediaQueries.phablet} {

@@ -47,6 +47,7 @@ interface IThemeSizes {
   letterSpacingInPercent: number
 
   regularFontWeight: number
+  mediumFontWeight: number
   semiBoldFontWeight: number
   boldFontWeight: number
 }

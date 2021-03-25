@@ -22,6 +22,7 @@ const LightTheme: DefaultTheme = {
     letterSpacingInPercent: 1,
 
     regularFontWeight: 400,
+    mediumFontWeight: 500,
     semiBoldFontWeight: 600,
     boldFontWeight: 700,
   },

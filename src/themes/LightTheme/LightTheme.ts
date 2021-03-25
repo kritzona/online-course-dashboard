@@ -16,6 +16,11 @@ const LightTheme: DefaultTheme = {
     tnFontSize: 12,
     tnLineHeight: 18,
 
+    tsFontSize: 12,
+    tsLineHeight: 18,
+
+    letterSpacingInPercent: 1,
+
     regularFontWeight: 400,
     semiBoldFontWeight: 600,
     boldFontWeight: 700,
@@ -37,7 +42,7 @@ const LightTheme: DefaultTheme = {
     backgroundColor: '#F3F7FA',
   },
   effects: {
-    cardBoxShadow: '0px 2px 8px rgba(0, 0, 0, 0.1)',
+    cardBoxShadow: '0px 3px 0px #EDEDF6',
     defaultTransition: 'all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1)',
   },
   mediaQueries: {

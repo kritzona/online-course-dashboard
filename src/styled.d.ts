@@ -30,6 +30,11 @@ interface IThemeSizes {
   tnFontSize: number
   tnLineHeight: number
 
+  tsFontSize: number
+  tsLineHeight: number
+
+  letterSpacingInPercent: number
+
   regularFontWeight: number
   semiBoldFontWeight: number
   boldFontWeight: number

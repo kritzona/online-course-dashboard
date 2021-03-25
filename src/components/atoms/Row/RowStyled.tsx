@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const RowStyled = styled.div<IProps>`
-  ${({ gutter }) => css`
+  ${({ theme, gutter }) => css`
     width: 100%;
     display: grid;
     display: -ms-grid;
@@ -15,14 +15,14 @@ const RowStyled = styled.div<IProps>`
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 16px;
+    grid-column-gap: ${theme.sizes.stepSize * 4}px;
 
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
 
     ${gutter &&
     css`
-      grid-row-gap: 16px;
+      grid-row-gap: ${theme.sizes.stepSize * 4}px;
     `}
     ${!gutter &&
     css`

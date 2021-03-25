@@ -14,16 +14,21 @@ interface IProps {}
 const HomeView = (props: IProps) => {
   return (
     <HomeViewStyled>
-      <Text>dwawda</Text>
-      <Button>Create new dashboard</Button>
-      <ContentHeader>
-        <>
-          <Button>Manage dashboard</Button>
-          <Button>Create new dashboard</Button>
-        </>
-      </ContentHeader>
-      <Wrapper>
+      <Wrapper paddingY={true}>
         <Row gutter={true}>
+          <Column size={12}>
+            <ContentHeader>
+              <>
+                <Button>Manage dashboard</Button>
+                <Button>Create new dashboard</Button>
+              </>
+            </ContentHeader>
+          </Column>
+          <Column size={4}>
+            <Card>
+              <ContentWrapper size="normal">Card</ContentWrapper>
+            </Card>
+          </Column>
           <Column size={4}>
             <Card>
               <ContentWrapper size="normal">Card</ContentWrapper>
@@ -36,7 +41,17 @@ const HomeView = (props: IProps) => {
           </Column>
           <Column size={4}>
             <Card>
-              <ContentWrapper size="normal">Card</ContentWrapper>
+              <ContentWrapper size="large">Card</ContentWrapper>
+            </Card>
+          </Column>
+          <Column size={4}>
+            <Card>
+              <ContentWrapper size="large">Card</ContentWrapper>
+            </Card>
+          </Column>
+          <Column size={4}>
+            <Card>
+              <ContentWrapper size="large">Card</ContentWrapper>
             </Card>
           </Column>
         </Row>

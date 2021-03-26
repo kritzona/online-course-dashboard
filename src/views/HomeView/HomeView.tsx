@@ -7,6 +7,7 @@ import Row from '../../components/atoms/Row/Row'
 import Column from '../../components/atoms/Column/Column'
 import Card from '../../components/atoms/Card/Card'
 import ContentWrapper from '../../components/atoms/ContentWrapper/ContentWrapper'
+import Frame from '../../components/molecules/Frame/Frame'
 
 interface IProps {}
 
@@ -52,6 +53,9 @@ const HomeView = (props: IProps) => {
             <Card>
               <ContentWrapper size="large">Card</ContentWrapper>
             </Card>
+          </Column>
+          <Column size={4}>
+            <Frame title="Students number change per month" />
           </Column>
         </Row>
       </Wrapper>

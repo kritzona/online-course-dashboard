@@ -31,9 +31,9 @@ const LightTheme: DefaultTheme = {
     hoverPrimaryColor: '#713BDB',
     activePrimaryColor: '#713BDB',
 
-    accentColor: '#373B53',
-    hoverAccentColor: '#373B53',
-    activeAccentColor: '#373B53',
+    accentColor: '#FF7A00',
+    hoverAccentColor: '#FF7A00',
+    activeAccentColor: '#FF7A00',
 
     redColor: '#FF4C61',
     greenColor: '#33D69F',
@@ -48,7 +48,7 @@ const LightTheme: DefaultTheme = {
     whiteColor: '#FFFFFF',
     blackColor: '#000000',
     greyColor: '#A6ACBE',
-    lightGreyColor: '#DADCE5',
+    lightGreyColor: '#EEF0F6',
     shadowColor: '#EDEDF6',
 
     backgroundColor: '#F3F7FA',

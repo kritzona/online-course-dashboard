@@ -10,6 +10,7 @@ const CardStyled = styled.div<IProps>`
     background-color: ${theme.colors.whiteColor};
     border-radius: ${theme.sizes.borderRadius}px;
     box-shadow: ${theme.effects.cardBoxShadow};
+    overflow: hidden;
   `}
 `
 

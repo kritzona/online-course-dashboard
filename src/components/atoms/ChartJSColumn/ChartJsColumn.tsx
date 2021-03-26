@@ -1,6 +1,6 @@
 import React from 'react'
 import ChartJsColumnStyled from './ChartJsColumnStyled'
-import Chart, { Bar } from 'react-chartjs-2'
+import { Bar } from 'react-chartjs-2'
 import { DefaultTheme, ThemeContext } from 'styled-components'
 import { convertPercentToNumber } from '../../../utils/math'
 

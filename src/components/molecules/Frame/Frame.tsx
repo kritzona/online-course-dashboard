@@ -7,6 +7,7 @@ import FrameContent from './FrameContent/FrameContent'
 interface IProps {
   title: string
   elements?: React.ReactNode
+  children?: React.ReactNode
 }
 
 const Frame = (props: IProps) => {
@@ -14,7 +15,7 @@ const Frame = (props: IProps) => {
     <FrameStyled>
       <Card>
         <FrameHeader title={props.title} elements={props.elements} />
-        <FrameContent />
+        <FrameContent>{props.children}</FrameContent>
       </Card>
     </FrameStyled>
   )

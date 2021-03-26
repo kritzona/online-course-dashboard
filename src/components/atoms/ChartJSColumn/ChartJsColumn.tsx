@@ -3,11 +3,15 @@ import ChartJsColumnStyled from './ChartJsColumnStyled'
 import { Bar } from 'react-chartjs-2'
 import { DefaultTheme, ThemeContext } from 'styled-components'
 import { convertPercentToNumber } from '../../../utils/math'
+import { roundBar } from '../../../utils/chartjs-custom'
+import Chart from 'chart.js'
 
 interface IProps {}
 interface IChartJsColumnElementProps {
   theme: DefaultTheme
 }
+
+roundBar(Chart)
 
 const ChartJsColumnElement = (props: IChartJsColumnElementProps) => {
   const theme = props.theme
@@ -31,21 +35,26 @@ const ChartJsColumnElement = (props: IChartJsColumnElementProps) => {
         label: 'dwaawd',
         data: [5, 10, 10, 5, 10, 10, 5, 10, 10, 5, 10],
         backgroundColor: theme.colors.primaryColor,
+        borderWidth: 0,
+        barPercentage: 0.4,
       },
       {
         label: 'dwaawd2',
         data: [10, 13, 16, 5, 10, 10, 10, 13, 16, 5, 10],
         backgroundColor: theme.colors.accentColor,
+        borderWidth: 0,
+        barPercentage: 0.4,
       },
     ],
   }
-  const options = {
+  const options: any = {
     responsive: true,
     maintainAspectRatio: false,
     title: {
       display: false,
       text: '',
     },
+    cornerRadius: 20,
     layout: {
       padding: {
         left: -5,
@@ -64,7 +73,6 @@ const ChartJsColumnElement = (props: IChartJsColumnElementProps) => {
           scaleLabel: {
             display: false,
           },
-          barPercentage: 0.3,
           ticks: {
             fontFamily: 'Gilroy Medium',
             fontSize: theme.sizes.tnFontSize,

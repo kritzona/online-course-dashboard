@@ -8,6 +8,7 @@ import Column from '../../components/atoms/Column/Column'
 import Card from '../../components/atoms/Card/Card'
 import ContentWrapper from '../../components/atoms/ContentWrapper/ContentWrapper'
 import Frame from '../../components/molecules/Frame/Frame'
+import ColumnChart from '../../components/molecules/ColumnChart/ColumnChart'
 
 interface IProps {}
 
@@ -56,6 +57,9 @@ const HomeView = (props: IProps) => {
           </Column>
           <Column size={4}>
             <Frame title="Students number change per month" />
+          </Column>
+          <Column size={4}>
+            <ColumnChart title="Students number change per month" />
           </Column>
         </Row>
       </Wrapper>

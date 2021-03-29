@@ -17,6 +17,8 @@ import UnderperformStudents from '../../components/organisms/UnderperformStudent
 import FinishedHomeworks from '../../components/organisms/FinishedHomeworks/FinishedHomeworks'
 import LectionsLeft from '../../components/organisms/LectionsLeft/LectionsLeft'
 import HoursSpent from '../../components/organisms/HoursSpent/HoursSpent'
+import List from '../../components/atoms/List/List'
+import StudentWithMark from '../../components/molecules/StudentWithMark/StudentWithMark'
 
 interface IProps {}
 
@@ -59,7 +61,24 @@ const HomeView = (props: IProps) => {
             </Row>
           </Column>
           <Column size={3}>
-            <Frame title="Students by average mark" />
+            <Frame title="Students by average mark">
+              <List>
+                <>
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                </>
+              </List>
+            </Frame>
           </Column>
           <Column size={3}>
             <Frame title="Students by type of studying" />

@@ -10,6 +10,13 @@ import ContentWrapper from '../../components/atoms/ContentWrapper/ContentWrapper
 import Frame from '../../components/molecules/Frame/Frame'
 import ColumnChart from '../../components/molecules/ColumnChart/ColumnChart'
 import CountInfo from '../../components/molecules/CountInfo/CountInfo'
+import PersonCircleIcon from '../../components/ready-circle-icons/PersonCircleIcon'
+import CountStudents from '../../components/organisms/CountStudents/CountStudents'
+import AverageMark from '../../components/organisms/AverageMark/AverageMark'
+import UnderperformStudents from '../../components/organisms/UnderperformStudents/UnderperformStudents'
+import FinishedHomeworks from '../../components/organisms/FinishedHomeworks/FinishedHomeworks'
+import LectionsLeft from '../../components/organisms/LectionsLeft/LectionsLeft'
+import HoursSpent from '../../components/organisms/HoursSpent/HoursSpent'
 
 interface IProps {}
 
@@ -26,39 +33,36 @@ const HomeView = (props: IProps) => {
               </>
             </ContentHeader>
           </Column>
-          <Column size={4}>
-            <CountInfo />
+          <Column size={3}>
+            <CountStudents />
           </Column>
-          <Column size={4}>
-            <Card>
-              <ContentWrapper size="normal">Card</ContentWrapper>
-            </Card>
+          <Column size={3}>
+            <AverageMark />
           </Column>
-          <Column size={4}>
-            <Card>
-              <ContentWrapper size="normal">Card</ContentWrapper>
-            </Card>
+          <Column size={3}>
+            <UnderperformStudents />
           </Column>
-          <Column size={4}>
-            <Card>
-              <ContentWrapper size="large">Card</ContentWrapper>
-            </Card>
+          <Column size={3}>
+            <FinishedHomeworks />
           </Column>
-          <Column size={4}>
-            <Card>
-              <ContentWrapper size="large">Card</ContentWrapper>
-            </Card>
+          <Column size={6}>
+            <Row gutter={true}>
+              <Column size={12}>
+                <ColumnChart title="Students number change per month" />
+              </Column>
+              <Column size={6}>
+                <LectionsLeft />
+              </Column>
+              <Column size={6}>
+                <HoursSpent />
+              </Column>
+            </Row>
           </Column>
-          <Column size={4}>
-            <Card>
-              <ContentWrapper size="large">Card</ContentWrapper>
-            </Card>
+          <Column size={3}>
+            <Frame title="Students by average mark" />
           </Column>
-          <Column size={4}>
-            <Frame title="Students number change per month" />
-          </Column>
-          <Column size={4}>
-            <ColumnChart title="Students number change per month" />
+          <Column size={3}>
+            <Frame title="Students by type of studying" />
           </Column>
         </Row>
       </Wrapper>

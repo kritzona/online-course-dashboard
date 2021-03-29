@@ -7,6 +7,7 @@ interface IProps {
 const CardStyled = styled.div<IProps>`
   ${({ theme }) => css`
     width: 100%;
+    height: 100%;
     background-color: ${theme.colors.whiteColor};
     border-radius: ${theme.sizes.borderRadius}px;
     box-shadow: ${theme.effects.cardBoxShadow};

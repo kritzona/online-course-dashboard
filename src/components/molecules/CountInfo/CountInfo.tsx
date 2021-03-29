@@ -12,9 +12,16 @@ import CountInfoStyled, {
 import Card from '../../atoms/Card/Card'
 import ContentWrapper from '../../atoms/ContentWrapper/ContentWrapper'
 import Text from '../../atoms/Text/Text'
-import PersonCircleIcon from '../../ready-circle-icons/PersonCircleIcon'
+import CircleIcon from '../../atoms/CircleIcon/CircleIcon'
 
-interface IProps {}
+interface IProps {
+  circleIcon: ReturnType<typeof CircleIcon>
+  desc: string
+  value: number
+  valueSuffix?: string
+  addValue?: number
+  addValueSuffix?: string
+}
 
 const CountInfo = (props: IProps) => {
   return (
@@ -23,27 +30,29 @@ const CountInfo = (props: IProps) => {
         <ContentWrapper size="large">
           <CountInfoContentStyled>
             <CountInfoWestStyled>
-              <CountInfoIconStyled>
-                <PersonCircleIcon />
-              </CountInfoIconStyled>
+              <CountInfoIconStyled>{props.circleIcon}</CountInfoIconStyled>
             </CountInfoWestStyled>
             <CountInfoEastStyled>
               <CountInfoValuesStyled>
                 <CountInfoValueStyled>
                   <Text type="span" size="medium" weight="semibold">
-                    62
+                    {props.value}
+                    {props.valueSuffix ? props.valueSuffix : null}
                   </Text>
                 </CountInfoValueStyled>
-                <CountInfoAddValueStyled>
-                  <Text type="span" size="normal" weight="semibold">
-                    (62%)
-                  </Text>
-                </CountInfoAddValueStyled>
+                {props.addValue && (
+                  <CountInfoAddValueStyled>
+                    <Text type="span" size="normal" weight="semibold">
+                      ({props.addValue}
+                      {props.addValueSuffix ? props.addValueSuffix : null})
+                    </Text>
+                  </CountInfoAddValueStyled>
+                )}
               </CountInfoValuesStyled>
 
               <CountInfoDescStyled>
                 <Text type="span" size="normal" weight="medium">
-                  Students
+                  {props.desc}
                 </Text>
               </CountInfoDescStyled>
             </CountInfoEastStyled>

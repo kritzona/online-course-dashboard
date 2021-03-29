@@ -1,9 +1,11 @@
 import React from 'react'
 import CountInfoStyled, {
+  CountInfoAddValueStyled,
   CountInfoContentStyled,
   CountInfoDescStyled,
   CountInfoEastStyled,
   CountInfoIconStyled,
+  CountInfoValuesStyled,
   CountInfoValueStyled,
   CountInfoWestStyled,
 } from './CountInfoStyled'
@@ -26,11 +28,19 @@ const CountInfo = (props: IProps) => {
               </CountInfoIconStyled>
             </CountInfoWestStyled>
             <CountInfoEastStyled>
-              <CountInfoValueStyled>
-                <Text type="span" size="medium" weight="semibold">
-                  62
-                </Text>
-              </CountInfoValueStyled>
+              <CountInfoValuesStyled>
+                <CountInfoValueStyled>
+                  <Text type="span" size="medium" weight="semibold">
+                    62
+                  </Text>
+                </CountInfoValueStyled>
+                <CountInfoAddValueStyled>
+                  <Text type="span" size="normal" weight="semibold">
+                    (62%)
+                  </Text>
+                </CountInfoAddValueStyled>
+              </CountInfoValuesStyled>
+
               <CountInfoDescStyled>
                 <Text type="span" size="normal" weight="medium">
                   Students

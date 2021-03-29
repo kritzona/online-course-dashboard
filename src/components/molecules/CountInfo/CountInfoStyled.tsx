@@ -34,8 +34,25 @@ export const CountInfoEastStyled = styled.div<IProps>`
 export const CountInfoIconStyled = styled.div<IProps>`
   ${({ theme }) => css``}
 `
+export const CountInfoValuesStyled = styled.div<IProps>`
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > *:not(:first-child) {
+      margin-left: ${theme.sizes.stepSize}px;
+    }
+  `}
+`
 export const CountInfoValueStyled = styled.div<IProps>`
   ${({ theme }) => css``}
+`
+export const CountInfoAddValueStyled = styled.div<IProps>`
+  ${({ theme }) => css`
+    color: ${theme.colors.greyColor};
+  `}
 `
 export const CountInfoDescStyled = styled.div<IProps>`
   ${({ theme }) => css`

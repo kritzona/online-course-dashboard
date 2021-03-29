@@ -92,7 +92,7 @@ export const roundBar = (chart) => {
 
     for (let i = 1; i < 4; i++) {
       let nextCornerId,
-        nextCorner,
+        // nextCorner,
         width,
         height,
         x,
@@ -112,7 +112,7 @@ export const roundBar = (chart) => {
         nextCornerId = 0
       }
 
-      nextCorner = cornerAt(nextCornerId)
+      // nextCorner = cornerAt(nextCornerId)
 
       width = corners[2][0] - corners[1][0]
       height = corners[0][1] - corners[1][1]

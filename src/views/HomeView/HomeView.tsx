@@ -5,12 +5,8 @@ import ContentHeader from '../../components/molecules/ContentHeader/ContentHeade
 import Wrapper from '../../components/atoms/Wrapper/Wrapper'
 import Row from '../../components/atoms/Row/Row'
 import Column from '../../components/atoms/Column/Column'
-import Card from '../../components/atoms/Card/Card'
-import ContentWrapper from '../../components/atoms/ContentWrapper/ContentWrapper'
 import Frame from '../../components/molecules/Frame/Frame'
 import ColumnChart from '../../components/molecules/ColumnChart/ColumnChart'
-import CountInfo from '../../components/molecules/CountInfo/CountInfo'
-import PersonCircleIcon from '../../components/ready-circle-icons/PersonCircleIcon'
 import CountStudents from '../../components/organisms/CountStudents/CountStudents'
 import AverageMark from '../../components/organisms/AverageMark/AverageMark'
 import UnderperformStudents from '../../components/organisms/UnderperformStudents/UnderperformStudents'
@@ -64,17 +60,6 @@ const HomeView = (props: IProps) => {
             <Frame title="Students by average mark">
               <List>
                 <>
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
-                  <StudentWithMark />
                   <StudentWithMark />
                 </>
               </List>

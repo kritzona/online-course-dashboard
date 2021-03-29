@@ -66,4 +66,13 @@ const LightTheme: DefaultTheme = {
   },
 }
 
+export type TColor =
+  | 'primary'
+  | 'accent'
+  | 'red'
+  | 'green'
+  | 'blue'
+  | 'orange'
+  | 'aqua'
+
 export default LightTheme

@@ -9,6 +9,7 @@ import Card from '../../components/atoms/Card/Card'
 import ContentWrapper from '../../components/atoms/ContentWrapper/ContentWrapper'
 import Frame from '../../components/molecules/Frame/Frame'
 import ColumnChart from '../../components/molecules/ColumnChart/ColumnChart'
+import CountInfo from '../../components/molecules/CountInfo/CountInfo'
 
 interface IProps {}
 
@@ -26,9 +27,7 @@ const HomeView = (props: IProps) => {
             </ContentHeader>
           </Column>
           <Column size={4}>
-            <Card>
-              <ContentWrapper size="normal">Card</ContentWrapper>
-            </Card>
+            <CountInfo />
           </Column>
           <Column size={4}>
             <Card>

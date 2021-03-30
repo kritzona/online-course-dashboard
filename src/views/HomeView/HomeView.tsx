@@ -15,6 +15,7 @@ import LectionsLeft from '../../components/organisms/LectionsLeft/LectionsLeft'
 import HoursSpent from '../../components/organisms/HoursSpent/HoursSpent'
 import List from '../../components/atoms/List/List'
 import StudentWithMark from '../../components/molecules/StudentWithMark/StudentWithMark'
+import ChartJsPie from '../../components/atoms/ChartJsPie/ChartJsPie'
 
 interface IProps {}
 
@@ -77,7 +78,9 @@ const HomeView = (props: IProps) => {
             </Frame>
           </Column>
           <Column size={3}>
-            <Frame title="Students by type of studying" />
+            <Frame title="Students by type of studying">
+              <ChartJsPie />
+            </Frame>
           </Column>
         </Row>
       </Wrapper>

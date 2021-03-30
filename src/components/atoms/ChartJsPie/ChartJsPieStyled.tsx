@@ -16,7 +16,7 @@ export const ChartJsPieCoreWrapperStyled = styled.div<IProps>`
   ${({ theme }) => css`
     position: absolute;
     top: calc(50% - (150px / 2) - 1px);
-    left: calc(50% - (150px / 2) + 1px);
+    left: calc(50% - (150px / 2));
   `}
 `
 export const ChartJsPieCoreStyled = styled.div<IProps>`

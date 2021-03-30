@@ -16,6 +16,7 @@ import HoursSpent from '../../components/organisms/HoursSpent/HoursSpent'
 import List from '../../components/atoms/List/List'
 import StudentWithMark from '../../components/molecules/StudentWithMark/StudentWithMark'
 import ChartJsPie from '../../components/atoms/ChartJsPie/ChartJsPie'
+import PieChart from '../../components/molecules/PieChart/PieChart'
 
 interface IProps {}
 
@@ -78,16 +79,15 @@ const HomeView = (props: IProps) => {
             </Frame>
           </Column>
           <Column size={3}>
-            <Frame title="Students by type of studying">
-              <ChartJsPie
-                items={[
-                  { id: 1, label: 'Первый', value: 2000, color: 'primary' },
-                  { id: 2, label: 'Второй', value: 300, color: 'orange' },
-                  { id: 3, label: 'Третий', value: 3400, color: 'red' },
-                  { id: 4, label: 'Четвертый', value: 100, color: 'green' },
-                ]}
-              />
-            </Frame>
+            <PieChart
+              title={'Students by type of studying'}
+              items={[
+                { id: 1, label: 'Первый', value: 2000, color: 'primary' },
+                { id: 2, label: 'Второй', value: 300, color: 'orange' },
+                { id: 3, label: 'Третий', value: 3400, color: 'red' },
+                { id: 4, label: 'Четвертый', value: 100, color: 'green' },
+              ]}
+            />
           </Column>
         </Row>
       </Wrapper>

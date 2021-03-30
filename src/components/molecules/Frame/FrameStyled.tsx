@@ -7,6 +7,7 @@ interface IProps {
 const FrameStyled = styled.div<IProps>`
   ${({ theme }) => css`
     width: 100%;
+    height: 100%;
   `}
 `
 

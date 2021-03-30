@@ -79,7 +79,14 @@ const HomeView = (props: IProps) => {
           </Column>
           <Column size={3}>
             <Frame title="Students by type of studying">
-              <ChartJsPie />
+              <ChartJsPie
+                items={[
+                  { id: 1, label: 'Первый', value: 2000, color: 'primary' },
+                  { id: 2, label: 'Второй', value: 300, color: 'orange' },
+                  { id: 3, label: 'Третий', value: 3400, color: 'red' },
+                  { id: 4, label: 'Четвертый', value: 100, color: 'green' },
+                ]}
+              />
             </Frame>
           </Column>
         </Row>

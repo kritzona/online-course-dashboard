@@ -25,7 +25,7 @@ export const convertNumberToPercent = (
   number: number,
   decimalPlaces = 0,
 ) => {
-  const percent = (total * number) / 100
+  const percent = (number * 100) / total
 
   return gaussRound(percent, decimalPlaces)
 }

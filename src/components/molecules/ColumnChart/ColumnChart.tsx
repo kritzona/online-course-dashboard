@@ -1,6 +1,6 @@
 import React from 'react'
 import Frame from '../Frame/Frame'
-import ChartJsColumn from '../../atoms/ChartJSColumn/ChartJsColumn'
+import ChartJsColumn from '../../atoms/ChartJsColumn/ChartJsColumn'
 import ColumnChartStyled from './ColumnChartStyled'
 import ChartLegend from '../ChartLegend/ChartLegend'
 import { ThemeContext } from 'styled-components'

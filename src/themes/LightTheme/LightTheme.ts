@@ -54,6 +54,7 @@ const LightTheme: DefaultTheme = {
     backgroundColor: '#F3F7FA',
   },
   effects: {
+    defaultBoxShadow: '0px 10px 20px rgba(0, 0, 0, 0.05)',
     cardBoxShadow: '0px 3px 0px #EDEDF6',
     defaultTransition: 'all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1)',
   },

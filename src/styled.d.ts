@@ -52,6 +52,7 @@ interface IThemeSizes {
   boldFontWeight: number
 }
 interface IThemeEffects {
+  defaultBoxShadow: string
   cardBoxShadow: string
   defaultTransition: string
 }

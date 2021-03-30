@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import ChartJsPieStyled from './ChartJsPieStyled'
+import ChartJsPieStyled, {
+  ChartJsPieCoreIconStyled,
+  ChartJsPieCoreStyled,
+  ChartJsPieCoreWrapperStyled,
+} from './ChartJsPieStyled'
 import ChartJsPieSvg from './ChartJsPieSvg/ChartJsPieSvg'
 import { TColor } from '../../../themes/LightTheme/LightTheme'
+import AcademicCapIcon from '../../ready-icons/AcademicCapIcon'
 
 export interface IChartJsPieItem {
   id: string | number
@@ -23,6 +28,13 @@ const ChartJsPie = (props: IProps) => {
   return (
     <ChartJsPieStyled>
       <ChartJsPieSvg items={props.items} />
+      <ChartJsPieCoreWrapperStyled>
+        <ChartJsPieCoreStyled>
+          <ChartJsPieCoreIconStyled>
+            <AcademicCapIcon />
+          </ChartJsPieCoreIconStyled>
+        </ChartJsPieCoreStyled>
+      </ChartJsPieCoreWrapperStyled>
     </ChartJsPieStyled>
   )
 }

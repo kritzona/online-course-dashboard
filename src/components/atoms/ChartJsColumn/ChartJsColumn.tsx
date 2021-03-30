@@ -36,14 +36,14 @@ const ChartJsColumnElement = (props: IChartJsColumnElementProps) => {
         data: [5, 10, 10, 5, 10, 10, 5, 10, 10, 5, 10],
         backgroundColor: theme.colors.primaryColor,
         borderWidth: 0,
-        barPercentage: 0.4,
+        barPercentage: 0.2,
       },
       {
         label: 'dwaawd2',
         data: [10, 13, 16, 5, 10, 10, 10, 13, 16, 5, 10],
         backgroundColor: theme.colors.accentColor,
         borderWidth: 0,
-        barPercentage: 0.4,
+        barPercentage: 0.2,
       },
     ],
   }

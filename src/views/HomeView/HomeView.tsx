@@ -15,7 +15,6 @@ import LectionsLeft from '../../components/organisms/LectionsLeft/LectionsLeft'
 import HoursSpent from '../../components/organisms/HoursSpent/HoursSpent'
 import List from '../../components/atoms/List/List'
 import StudentWithMark from '../../components/molecules/StudentWithMark/StudentWithMark'
-import ChartJsPie from '../../components/atoms/ChartJsPie/ChartJsPie'
 import PieChart from '../../components/molecules/PieChart/PieChart'
 
 interface IProps {}

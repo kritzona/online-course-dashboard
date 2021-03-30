@@ -5,7 +5,9 @@ interface IProps {
 }
 
 const FrameContentStyled = styled.div<IProps>`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+    height: 100%;
+  `}
 `
 
 export default FrameContentStyled

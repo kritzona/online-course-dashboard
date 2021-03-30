@@ -8,6 +8,8 @@ interface IProps {
 
 const ContentWrapperStyled = styled.div<IProps>`
   ${({ theme, size }) => css`
+    height: 100%;
+
     ${(!size || size === 'normal') &&
     css`
       padding: ${theme.sizes.stepSize * 2.5}px ${theme.sizes.stepSize * 3}px;

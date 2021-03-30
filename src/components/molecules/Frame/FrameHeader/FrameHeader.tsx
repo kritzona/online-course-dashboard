@@ -2,7 +2,7 @@ import React from 'react'
 import FrameHeaderStyled, {
   FrameHeaderElementsStyled,
   FrameHeaderTitleStyled,
-  FrameHeaderWrapperStyled,
+  FrameHeaderContentWrapperStyled,
 } from './FrameHeaderStyled'
 import ContentWrapper from '../../../atoms/ContentWrapper/ContentWrapper'
 import Text from '../../../atoms/Text/Text'
@@ -16,7 +16,7 @@ const FrameHeader = (props: IProps) => {
   return (
     <FrameHeaderStyled>
       <ContentWrapper>
-        <FrameHeaderWrapperStyled>
+        <FrameHeaderContentWrapperStyled>
           <FrameHeaderTitleStyled>
             <Text type="h2">{props.title}</Text>
           </FrameHeaderTitleStyled>
@@ -25,7 +25,7 @@ const FrameHeader = (props: IProps) => {
               {props.elements}
             </FrameHeaderElementsStyled>
           )}
-        </FrameHeaderWrapperStyled>
+        </FrameHeaderContentWrapperStyled>
       </ContentWrapper>
     </FrameHeaderStyled>
   )

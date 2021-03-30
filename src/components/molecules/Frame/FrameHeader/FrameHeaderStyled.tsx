@@ -9,7 +9,7 @@ const FrameHeaderStyled = styled.div<IProps>`
     border-bottom: 1px solid ${theme.colors.lightGreyColor};
   `}
 `
-export const FrameHeaderWrapperStyled = styled.div<IProps>`
+export const FrameHeaderContentWrapperStyled = styled.div<IProps>`
   ${({ theme }) => css`
     display: flex;
     flex-direction: row;

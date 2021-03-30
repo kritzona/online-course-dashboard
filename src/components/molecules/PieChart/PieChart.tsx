@@ -4,15 +4,40 @@ import PieChartStyled, {
   PieChartLegendsStyled,
   PieChartLegendStyled,
 } from './PieChartStyled'
-import ChartJsPie, { IChartJsPieItem } from '../../atoms/ChartJsPie/ChartJsPie'
+import ChartJsPie, {
+  calcTotalOfPieItems,
+  IChartJsPieItem,
+} from '../../atoms/ChartJsPie/ChartJsPie'
 import Frame from '../Frame/Frame'
 import ChartLegend from '../ChartLegend/ChartLegend'
-import { ThemeContext } from 'styled-components'
+import { DefaultTheme, ThemeContext } from 'styled-components'
 import { getHexByColor } from '../../../utils/theme'
+import { convertNumberToPercent } from '../../../utils/math'
 
 interface IProps {
   title: string
   items: IChartJsPieItem[]
+}
+
+const generatePieChartLegends = (
+  theme: DefaultTheme,
+  items: IChartJsPieItem[],
+) => {
+  const total = calcTotalOfPieItems(items)
+
+  return items.map((item) => {
+    return (
+      <PieChartLegendStyled>
+        <ChartLegend
+          color={getHexByColor(theme, item.color)}
+          value={item.value}
+          percent={convertNumberToPercent(total, item.value)}
+        >
+          {item.label}
+        </ChartLegend>
+      </PieChartLegendStyled>
+    )
+  })
 }
 
 const PieChart = (props: IProps) => {
@@ -25,42 +50,7 @@ const PieChart = (props: IProps) => {
               <ChartJsPie items={props.items} />
             </PieChartContentStyled>
             <PieChartLegendsStyled>
-              <PieChartLegendStyled>
-                <ChartLegend
-                  color={getHexByColor(theme, 'primary')}
-                  value={30}
-                  percent={30}
-                >
-                  Кек
-                </ChartLegend>
-              </PieChartLegendStyled>
-              <PieChartLegendStyled>
-                <ChartLegend
-                  color={getHexByColor(theme, 'orange')}
-                  value={30}
-                  percent={30}
-                >
-                  Кек
-                </ChartLegend>
-              </PieChartLegendStyled>
-              <PieChartLegendStyled>
-                <ChartLegend
-                  color={getHexByColor(theme, 'red')}
-                  value={30}
-                  percent={30}
-                >
-                  Кек
-                </ChartLegend>
-              </PieChartLegendStyled>
-              <PieChartLegendStyled>
-                <ChartLegend
-                  color={getHexByColor(theme, 'green')}
-                  value={30}
-                  percent={30}
-                >
-                  Кек
-                </ChartLegend>
-              </PieChartLegendStyled>
+              {generatePieChartLegends(theme, props.items)}
             </PieChartLegendsStyled>
           </Frame>
         )}

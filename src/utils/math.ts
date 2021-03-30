@@ -29,3 +29,10 @@ export const convertNumberToPercent = (
 
   return gaussRound(percent, decimalPlaces)
 }
+
+export const calcCircumrefence = (radius: number) => {
+  return 2 * Math.PI * radius
+}
+export const calcArcLength = (radius: number, percent: number) => {
+  return (calcCircumrefence(radius) * percent) / 100
+}

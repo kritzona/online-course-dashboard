@@ -1,6 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { TColor } from '../../../themes/LightTheme/LightTheme'
 import { rgba } from 'polished'
+import { getHexByColor } from '../../../utils/theme'
 
 interface IProps {
   color: TColor
@@ -18,31 +19,7 @@ const CircleIconStyled = styled.div<IProps>`
     border-radius: 50%;
 
     ${() => {
-      let hexColor = theme.colors.primaryColor
-
-      switch (color) {
-        case 'primary':
-          hexColor = theme.colors.primaryColor
-          break
-        case 'accent':
-          hexColor = theme.colors.accentColor
-          break
-        case 'red':
-          hexColor = theme.colors.redColor
-          break
-        case 'green':
-          hexColor = theme.colors.greenColor
-          break
-        case 'blue':
-          hexColor = theme.colors.blueColor
-          break
-        case 'orange':
-          hexColor = theme.colors.orangeColor
-          break
-        case 'aqua':
-          hexColor = theme.colors.aquaColor
-          break
-      }
+      const hexColor = getHexByColor(theme, color)
 
       return css`
         background-color: ${rgba(hexColor, 0.05)};

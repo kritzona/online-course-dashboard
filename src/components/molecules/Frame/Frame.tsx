@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, useRef } from 'react'
+import React, { RefObject, useEffect, useRef, useState } from 'react'
 import FrameStyled, {
   FrameContentWrapperStyled,
   FrameHeaderWrapperStyled,

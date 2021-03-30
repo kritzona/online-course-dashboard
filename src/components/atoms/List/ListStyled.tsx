@@ -8,8 +8,6 @@ const ListStyled = styled.div<IProps>`
   ${({ theme }) => css`
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
 
     & > *:not(:first-child) {
       margin-top: ${theme.sizes.stepSize * 2.5}px;

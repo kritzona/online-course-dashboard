@@ -61,6 +61,17 @@ const HomeView = (props: IProps) => {
               <List>
                 <>
                   <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
+                  <StudentWithMark />
                 </>
               </List>
             </Frame>

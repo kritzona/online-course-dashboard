@@ -31,6 +31,8 @@ const LightTheme: DefaultTheme = {
     hoverPrimaryColor: '#713BDB',
     activePrimaryColor: '#713BDB',
 
+    darkPrimaryColor: '#373B53',
+
     accentColor: '#FF7A00',
     hoverAccentColor: '#FF7A00',
     activeAccentColor: '#FF7A00',

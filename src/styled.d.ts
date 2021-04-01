@@ -5,6 +5,8 @@ interface IThemeColors {
   hoverPrimaryColor: string
   activePrimaryColor: string
 
+  darkPrimaryColor: string
+
   accentColor: string
   hoverAccentColor: string
   activeAccentColor: string

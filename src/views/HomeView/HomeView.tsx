@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HomeViewStyled from './HomeViewStyled'
 import Button from '../../components/atoms/Button/Button'
 import ContentHeader from '../../components/molecules/ContentHeader/ContentHeader'
@@ -20,6 +20,12 @@ import PieChart from '../../components/molecules/PieChart/PieChart'
 interface IProps {}
 
 const HomeView = (props: IProps) => {
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [])
+
   return (
     <HomeViewStyled>
       <Wrapper paddingY={true}>
@@ -47,7 +53,9 @@ const HomeView = (props: IProps) => {
           <Column size={6}>
             <Row gutter={true}>
               <Column size={12}>
-                <ColumnChart title="Students number change per month" />
+                {loaded && (
+                  <ColumnChart title="Students number change per month" />
+                )}
               </Column>
               <Column size={6}>
                 <LectionsLeft />

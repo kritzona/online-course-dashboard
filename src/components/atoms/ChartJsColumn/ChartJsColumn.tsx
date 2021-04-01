@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import ChartJsColumnStyled from './ChartJsColumnStyled'
 import { Bar } from 'react-chartjs-2'
 import { DefaultTheme, ThemeContext } from 'styled-components'
@@ -15,6 +15,7 @@ roundBar(Chart)
 
 const ChartJsColumnElement = (props: IChartJsColumnElementProps) => {
   const theme = props.theme
+  const chartJsBarCanvasRef = useRef<Bar>(null)
 
   const data = {
     labels: [
@@ -128,7 +129,12 @@ const ChartJsColumnElement = (props: IChartJsColumnElementProps) => {
     },
   }
 
-  return <Bar data={data} options={options} />
+  useEffect(() => {
+    if (chartJsBarCanvasRef.current) {
+    }
+  }, [])
+
+  return <Bar data={data} options={options} ref={chartJsBarCanvasRef} />
 }
 
 const ChartJsColumn = (props: IProps) => {

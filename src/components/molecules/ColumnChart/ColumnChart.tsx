@@ -25,7 +25,7 @@ const ColumnChart = (props: IProps) => {
               </>
             }
           >
-            <ChartJsColumn />
+            {<ChartJsColumn />}
           </Frame>
         )}
       </ThemeContext.Consumer>

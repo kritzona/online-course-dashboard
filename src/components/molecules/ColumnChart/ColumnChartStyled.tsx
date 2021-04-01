@@ -5,7 +5,9 @@ interface IProps {
 }
 
 const ColumnChartStyled = styled.div<IProps>`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+    width: 100%;
+  `}
 `
 
 export default ColumnChartStyled

@@ -83,7 +83,7 @@ const generateFontWeightStyle = (
     font-weight: ${fontWeight};
   `
 }
-const generateFontStyle = (
+export const generateFontStyle = (
   theme: DefaultTheme,
   size: TTextSize | undefined,
   weight: TTextWeight | undefined,

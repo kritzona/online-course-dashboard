@@ -19,8 +19,6 @@ export const generatePieSvgCircles = (items: IChartJsPieItem[]) => {
 
     offset = offset + percent
 
-    console.log(item.id, percent, currentOffset, item.color, total, item.value)
-
     return (
       <ChartJsPieSvgCircleStyled
         key={item.id}

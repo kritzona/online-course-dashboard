@@ -27,7 +27,7 @@ const generatePieChartLegends = (
 
   return items.map((item) => {
     return (
-      <PieChartLegendStyled>
+      <PieChartLegendStyled key={item.id}>
         <ChartLegend
           color={getHexByColor(theme, item.color)}
           value={item.value}

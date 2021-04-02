@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import HomeView from './views/HomeView/HomeView'
 import Header from './components/organisms/Header/Header'
 import Sidebar from './components/organisms/Sidebar/Sidebar'
+import Content from './components/organisms/Content/Content'
 
 interface IProps {}
 
@@ -37,13 +38,15 @@ const App = (props: IProps) => {
     <AppStyled>
       <Header ref={headerRef} />
       <Sidebar ref={sidebarRef} />
-      <AppContentStyled ref={appContentRef}>
-        <Switch>
-          <Route path="/" exact>
-            <HomeView />
-          </Route>
-        </Switch>
-      </AppContentStyled>
+      <Content>
+        <AppContentStyled ref={appContentRef}>
+          <Switch>
+            <Route path="/" exact>
+              <HomeView />
+            </Route>
+          </Switch>
+        </AppContentStyled>
+      </Content>
     </AppStyled>
   )
 }

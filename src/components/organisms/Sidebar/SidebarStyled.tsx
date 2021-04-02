@@ -4,7 +4,7 @@ interface IProps {
   theme: DefaultTheme
 }
 
-const SidebarStyled = styled.div<IProps>`
+const SidebarStyled = styled.aside<IProps>`
   ${({ theme }) => css`
     width: max-content;
     height: 100vh;

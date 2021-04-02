@@ -4,7 +4,7 @@ interface IProps {
   theme: DefaultTheme
 }
 
-const ContentHeaderStyled = styled.div<IProps>`
+const ContentHeaderStyled = styled.header<IProps>`
   ${({ theme }) => css`
     display: flex;
     flex-direction: row;

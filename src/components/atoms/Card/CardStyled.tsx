@@ -4,7 +4,7 @@ interface IProps {
   theme: DefaultTheme
 }
 
-const CardStyled = styled.div<IProps>`
+const CardStyled = styled.section<IProps>`
   ${({ theme }) => css`
     width: 100%;
     height: 100%;

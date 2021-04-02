@@ -4,7 +4,7 @@ interface IProps {
   theme: DefaultTheme
 }
 
-const HomeViewStyled = styled.div<IProps>`
+const HomeViewStyled = styled.article<IProps>`
   ${({ theme }) => css``}
 `
 

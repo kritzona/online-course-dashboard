@@ -11,7 +11,7 @@ const FrameStyled = styled.div<IProps>`
   `}
 `
 
-export const FrameHeaderWrapperStyled = styled.div<IProps>`
+export const FrameHeaderWrapperStyled = styled.header<IProps>`
   ${({ theme }) => css``}
 `
 export const FrameContentWrapperStyled = styled.div<IProps>`
